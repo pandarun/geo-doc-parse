@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PDF Парсер | Telegram Web App</title>
+    <script>
+      // Redirect to the home page with the correct path
+      // This handles client-side routing for GitHub Pages
+      const path = window.location.pathname;
+      const base = '/geo-doc-parse';
+
+      if (path.startsWith(base)) {
+        // Already has the base path, just redirect to index
+        window.location.replace(base + '/#' + path.substring(base.length));
+      } else {
+        // Missing base path, add it
+        window.location.replace(base + '/#' + path);
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>

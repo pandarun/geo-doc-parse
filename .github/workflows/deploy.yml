@@ -53,8 +53,6 @@ jobs:
 
       - name: Build
         run: ${{ steps.detect-package-manager.outputs.runner }} npm run build
-        env:
-          BASE_URL: /geo-doc-parse/
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
