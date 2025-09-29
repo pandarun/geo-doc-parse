@@ -62,6 +62,25 @@ This project is built with:
 
 ## How can I deploy this project?
 
+### GitHub Pages (Automatic Deployment)
+
+This project is configured to automatically deploy to GitHub Pages when you push to the `main` branch.
+
+1. **Enable GitHub Pages** in your repository:
+   - Go to Settings → Pages
+   - Under "Source", select "GitHub Actions"
+
+2. **Automatic Deployment**:
+   - Every push to `main` triggers the deployment workflow
+   - View your site at: `https://[your-username].github.io/geo-doc-parse/`
+
+3. **Manual Deployment** (if needed):
+   ```sh
+   npm run deploy
+   ```
+
+### Lovable Platform
+
 Simply open [Lovable](https://lovable.dev/projects/19647b35-a28f-40ba-9f72-18415b3140de) and click on Share -> Publish.
 
 ## Can I connect a custom domain to my Lovable project?
